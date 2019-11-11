@@ -1,58 +1,78 @@
-# Sailor Merch - Ecommerce Site.
+# C# Admin server with .NET Core
 
-This project includes Home page with slider images, Product page that allows the user to filter by product type and price, Contact page with form, Footer with social media links, Backend API server and database server, Responsivepages for various device types and Accessibility and security. a MYSQL database is  designed and deployed on desktops to accommodate the ecommerce database. The ecommerce database is  comprised of 3 tables, storing information product, pricing, and contacts.
+This application has a .NET C# REST API backend that fetches data from a MySQL DB that interacts with a React Application that allows you create new entries, read, delete, and update to the MySQL DB.
 
-## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## Demo
+Below is a demo of the page utilizing CRUD methods.
 
-### Prerequisites
 
-What things you need to install the software:
+### Read
+![](work/demo/read.gif)
 
-VSCODE
 
-## Running the tests
+### Create
+![](work/demo/create.gif)
 
-Saying "npm test" will run a;; tests.
 
-### Break down into tests
+### Update
+![](work/demo/update.gif)
 
-These tests check if the servers are working.
 
+### DELETE
+![](work/demo/delete.gif))
+
+
+## Images
+
+## Read
+This demonstrates that my front end react application was able to fetch data from my .NET backend
+![Read screenshot](work/images/read.png)
+
+## Create
+I first created a new product
+![Create screenshot](work/images/create.png)
+
+The product that I created was added to the list of all products
+![Create screenshot](work/images/create2.png)
+
+
+## Update
+Updating previews product Using Post Method with Using Put
+![Update screenshot](work/images/put.png)
+
+## Delete
+After updating but before deleting the product
+![Updatescreenshot](work/images/put2.png)
+Deleting the item made with the id 18 by pressing de delete button. After deleting the item have been remove.
+![Delete Screenshot](work/images/delete.png)
+
+
+## Intalling 
+* Clone this repo and 
+* Then in the C# files change the connection string in the startup file to the  database that it will be connect.
+* Then run the application using : 
 ```
-describe('Test for "/" api endpoint', () => {
-     it("/ should send back 200 status code and atleast 1 product", done => {
-       chai
-         .request(app)
-         .get("/product")
-        .end((error, response) => {
-           console.log("response - ", response.body);
-           expect(response.body.length > 0).equal(true);
-           expect(response.status).equal(200);
-          done();
-        });
-     });
-   });
+dotnet run
 ```
+* The backend and the frontend will establish a connection with each other.
+* If running into any problems go to the build with resources showing below
 
-## Deployment
+### Built With 
 
-"npm run start" will deploy site
-
-## Built With
-
-* [React](https://reactjs.org) 
+* [React](https://reactjs.org/docs/getting-started.html) - JavaScript library for building user interfaces
+* [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) - An elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run on the .NET Framework.
+* [MySQL](https://dev.mysql.com/doc/) - Relational database management system
 
 
-## Authors
 
-* **Lenny Dickey** - *Initial work* - [LennyDickey](https://github.com/LennyDickey)
+## Author
+* [Christiam Hernandez](https://github.com/christiamenrique)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
 
-* This site was insipred by Sailor Moon.
+
+ 
