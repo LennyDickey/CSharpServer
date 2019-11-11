@@ -67,7 +67,7 @@ dotnet run
 
 
 ## Author
-* [Christiam Hernandez](https://github.com/christiamenrique)
+* [Lenny Dickey](https://github.com/lennydickey)
 
 ## License
 
